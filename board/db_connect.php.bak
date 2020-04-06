@@ -1,0 +1,11 @@
+<?php
+
+	$hostName = "localhost";
+	$dbUser = "alziotutor";
+	$dbPass = "비밀번호 입력";
+	$dbName = "alziotutor";
+
+	$db = new mysqli($hostName, $dbUser, $dbPass, $dbName);
+	$db->query("SET NAMES utf-8");
+
+?>
