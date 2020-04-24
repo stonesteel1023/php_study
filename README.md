@@ -1,7 +1,7 @@
 # php.ini 환경 설정
  - 출처 : http://egloos.zum.com/silve2/v/4444284
  
-## php 환경설정(php.ini) : [Language Options]
+### [Language Options]
 
 engine = On : Apache에서 PHP 스크립트 언어 엔진 적용(Off로 설정시 PHP파일을 보여주지 못하고 다운로드하게 됨)
 zend.ze1_compatibility_mode = Off : zend 엔진 버전1의 호환모드 설정
@@ -20,7 +20,7 @@ unserialize_callback_func = : unserialize 중에 정의되지 않은 클래스�
 allow_call_time_pass_reference = On : 함수 사용시 변수를 강제적으로 참조하는 것 금지
 
 
-## php 환경설정(php.ini) : [Safe Mode]
+### [Safe Mode]
 
 safe_mode = Off : 안전모드 사용여부 설정
 safe_mode_gid = Off : 파일이 열릴 때, UID 비교검사 수행(On 설정시 GID 비교검사 수행)
@@ -38,14 +38,14 @@ disable_classes = : 특정 클래스 사용 금지 설정
 expose_php = On : PHP가 해당 서버에 인스톨되고, 사용되고 있다는 내용 알림 설정(On 설정시 내용 알림)
 
 
-## php 환경설정(php.ini) : [Resource Limits]
+### [Resource Limits]
 
 max_execution_time = 30 : 스크립트 최대 실행시간(초단위) 설정
 max_input_time = 60 : POST, GET, 파일업로드 등의 입력 데이터를 받아들이는 최대시간(초단위) 설정
 memory_limit = 128M : 스크립트가 사용할 수 있는 최대 메모리양 설정
 
 
-## php 환경설정(php.ini) : [Error handling and logging]
+### [Error handling and logging]
 
 error_reporting = E_ALL & ~E_NOTICE : E_NOTICE를 제외한 모든 에러 출력(다음의 항목들이 사용 가능함, E_ALL[각주:1], E_ERROR[각주:2], E_RECOVERABLE_ERROR[각주:3], E_WARNING[각주:4], E_PARSE[각주:5], E_NOTICE[각주:6], E_CORE_ERROR[각주:7], E_CORE_WARNING[각주:8], E_COMPILE_ERROR[각주:9], E_COMPILE_WARNING[각주:10], E_USER_ERROR[각주:11], E_USER_WARNING[각주:12], E_USER_NOTICE[각주:13])
 
@@ -61,7 +61,7 @@ track_errors = Off : $php_errormsg에 마지막 에러/경고 메시지 저장 �
 ;error_log = syslog : syslog에 에러 기록
 
 
-## php 환경설정(php.ini) : [Data Handling]
+### [Data Handling]
 
 ;arg_separator.output = "&amp;" : PHP가 생성한 URL 인자를 구분하는 구분자 설정
 ;arg_separator.input = ";&" : PHP가 URL에서 변수를 분리하는데 사용하는 구분자 설정
@@ -79,7 +79,7 @@ default_mimetype = "text/html", default_charset = "utf-8" : Content-type: 헤더
 
  
 
-## php 환경설정(php.ini) : [Paths and Directories]
+### [Paths and Directories]
 
 ;include_path = ".:/php/includes" : require(), include(), fopen_with_path() 함수가 파일을 찾는 디렉토리 목록 설정
 doc_root = : PHP 루트 디렉토리 설정(안전모드 설정시 루트 디렉토리 밖의 파일은 사용할 수 없음)
@@ -93,7 +93,7 @@ enable_dl = On : dl() 함수를 유효하게 할 것인지 설정
 
  
 
-## php 환경설정(php.ini) : [File Uploads]
+### [File Uploads]
 
 file_uploads = On : 파일 업로드 허가여부 설정
 ;upload_tmp_dir = : HTTP로 파일 업로드시 임시 작업 디렉토리 설정(미 지정시 시스템 디폴트 디렉토리[각주:15]가 사용됨)
@@ -101,7 +101,7 @@ upload_max_filesize = 2M : 업로드 파일의 최대 사이즈 설정
 
  
 
-## php 환경설정(php.ini) : [Fopen wrappers]
+### [Fopen wrappers]
 
 allow_url_fopen = Off : 파일 액세스시 외부사이트 파일을 불러올 수 있는지여부 설정(보안상 Off로 설정할 것을 권장함)
 ;from="admin@myhome.com" : 익명 FTP의 패스워드 설정
@@ -110,10 +110,9 @@ default_socket_timeout = 60 : 소켓기반 스트림의 기본 시간제한 설�
 ;auto_detect_line_endings = Off : fget(), file()로 읽은 데이터의 줄바꿈 방식 선택여부 설정(On 설정시 유닉스, MS-DOS, 매킨토시 방식 중 어떤 것을 사용할 것인지 검사)
 
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-lang=EN-US style='font-size:10.0pt'>[</span><span class=SpellE><span
-style='font-size:10.0pt'>수퍼글로벌</span></span><span style='font-size:10.0pt'> 변수<span
-lang=EN-US>]<o:p></o:p></span></span></p>
+# 글로벌 설정
+ 
+## 변수설정
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
